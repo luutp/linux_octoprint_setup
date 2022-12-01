@@ -71,7 +71,7 @@ function print_error(){
 # >>> ping www.google.com
 
 # Download this script at 
-# wget https://raw.githubusercontent.com/luutp/luuNotes/develop/src/bbb_octo_setup.sh?token=GHSAT0AAAAAABY3QIGO6PXXFJEAVNH4EN62YZE6V4Q -O bbb_octo_setup.sh
+# wget https://github.com/luutp/octo_bbb/blob/master/bbb_octo_setup.sh -O bbb_octo_setup.sh
 # Run bash file
 # >>> bash bbb_octo_setup.sh
 
@@ -98,7 +98,7 @@ sudo usermod -a -G tty debian
 sudo usermod -a -G dialout debian
 # Add automatic start up
 print "Step 5/5: Enable octoprint at start up"
-wget https://raw.githubusercontent.com/luutp/luuNotes/develop/src/octoprint.service?token=GHSAT0AAAAAABY3QIGOCPRQDI2QRATMQYQYY2SEG2A -O octoprint.service
+wget https://raw.githubusercontent.com/luutp/octo_bbb/master/octoprint.service -O octoprint.service
 sudo mv octoprint.service /etc/systemd/system/octoprint.service
 sudo systemctl enable octoprint.service
 print "DONE"
