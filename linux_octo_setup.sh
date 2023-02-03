@@ -64,7 +64,7 @@ sudo apt install -y python3-pip python3-dev python3-setuptools python3-venv git 
 # Create OctoPrint dir
 print "mkdir OctoPrint && cd OctoPrint"
 mkdir OctoPrint && cd OctoPrint
-sudo chown -R octo ~/OctoPrint
+sudo chown -R ${USER} ~/OctoPrint
 # Create new venv
 print "Step 3/5: create new venv and install octoprint"
 python3 -m venv venv
